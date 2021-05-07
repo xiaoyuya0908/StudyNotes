@@ -1,29 +1,14 @@
 <template>
 	<el-table :data="tableData"  border ref='table'>
-		<el-table-column label="编号" width="180">
-			<template slot-scope="scope">
-				<span style="margin-left: 10px">{{ scope.row.id }}</span>
-			</template>
+		<el-table-column label="编号" width="180" prop="id">
 		</el-table-column>
-		<el-table-column label="用户名" width="180">
-			<template slot-scope="scope">
-				<span style="margin-left: 10px">{{ scope.row.name }}</span>
-			</template>
+		<el-table-column label="用户名" width="180" prop="name">
 		</el-table-column>
-		<el-table-column label="角色" width="180">
-			<template slot-scope="scope">
-				<span style="margin-left: 10px">{{ scope.row.name | letterToWord }}</span>
-			</template>
+		<el-table-column label="角色" width="180" prop="name">
 		</el-table-column>
-		<el-table-column label="手机号码" width="180">
-			<template slot-scope="scope">
-				<span style="margin-left: 10px">{{ scope.row.phone }}</span>
-			</template>
+		<el-table-column label="手机号码" width="180" prop="phone">
 		</el-table-column>
-		<el-table-column label="邮箱" width="180">
-			<template slot-scope="scope">
-				<span style="margin-left: 10px">{{ scope.row.email }}</span>
-			</template>*
+		<el-table-column label="邮箱" width="180" prop="email">
 		</el-table-column>
 
 		<el-table-column label="操作">
